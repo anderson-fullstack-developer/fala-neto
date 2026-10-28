@@ -113,3 +113,18 @@ docker build -f apps/admin/Dockerfile -t fala-neto-web --build-arg VITE_API_URL=
 docker run --rm -p 8080:3000 -e CLERK_SECRET_KEY=sk_test_... -e VITE_CLERK_PUBLISHABLE_KEY=pk_test_... fala-neto-web
 # abrir http://localhost:8080
 ```
+
+## 7. Dados de demonstração para capturas (portfólio)
+
+Nunca na produção. Numa **cópia** da base de dados (branch do Neon), para as palavras e lições serem as reais:
+
+1. Neon → projeto → **Branches → Create branch** (a partir de `main`), por ex. `portfolio`. Copiar a *connection string* do branch.
+2. Na pasta `apps/api`:
+   ```bash
+   # PowerShell: $env:PORTFOLIO_DATABASE_URL="postgres://…branch…"
+   pnpm exec tsx scripts/seed-portfolio.ts --sim      # cria ~50 pessoas e 30 dias de atividade
+   pnpm exec tsx scripts/seed-portfolio.ts --limpar   # apaga tudo o que o script criou
+   ```
+3. Para ver: correr a API apontada ao branch (`DATABASE_URL`/`DIRECT_URL` do branch) e abrir o painel.
+
+O script recusa-se a correr se o endereço for o da produção, não inventa palavras (usa o conteúdo que já existe) e marca todas as contas com `@portfolio.invalid`. Nas capturas, indicar "dados de demonstração".
