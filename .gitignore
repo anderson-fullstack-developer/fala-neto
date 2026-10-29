@@ -50,3 +50,9 @@ apps/api/src/generated/
 
 # Gravações de pronúncia guardadas localmente (desenvolvimento)
 apps/api/storage/
+
+# AI assistant instructions (kept locally, not published)
+AGENTS.md
+CLAUDE.md
+.claude/
+documentation.md

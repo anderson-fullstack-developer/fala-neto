@@ -1,6 +1,6 @@
 # Contribuir — Fala Neto
 
-Guia curto para quem continua o projeto (developer ou Claude Code). Detalhes em `AGENTS.md`, `docs/PLANO_DE_ENGENHARIA.md` e `docs/HANDOFF.md`.
+Guia curto para quem continua o projeto. Detalhes em `docs/PLANO_DE_ENGENHARIA.md` e `docs/HANDOFF.md`.
 
 ## Regras absolutas
 - **Nunca inventar** palavras, traduções ou pronúncias em Forro/Angolar/Lung'Ie. Usar placeholders rotulados até existir conteúdo aprovado no Admin.
