@@ -13,7 +13,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const API = "https://commons.wikimedia.org/w/api.php";
-const UA = "LinguaSTP-content-import/0.1 (https://github.com/anderson-fullstack-developer/app_stp)";
+const UA = "LinguaSTP-content-import/0.1 (https://github.com/anderson-fullstack-developer/fala-neto)";
 const CATEGORY = "Category:Lingua_Libre_pronunciation-kea";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "content", "sources", "lingua-libre-kea");

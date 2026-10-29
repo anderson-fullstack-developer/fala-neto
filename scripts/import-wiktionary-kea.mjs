@@ -15,7 +15,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const API = "https://en.wiktionary.org/w/api.php";
-const UA = "LinguaSTP-content-import/0.1 (https://github.com/anderson-fullstack-developer/app_stp)";
+const UA = "LinguaSTP-content-import/0.1 (https://github.com/anderson-fullstack-developer/fala-neto)";
 const CATEGORY = "Category:Kabuverdianu_lemmas";
 const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "content", "sources", "wiktionary-kea");
 

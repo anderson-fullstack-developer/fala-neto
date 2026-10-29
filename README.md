@@ -6,7 +6,7 @@ It starts with Forro (São Tomé and Príncipe) and Kriolu (Cape Verde, beta), a
 
 ![Fala Neto](docs/screenshots/capa.webp)
 
-![CI](https://github.com/anderson-fullstack-developer/app_stp/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/anderson-fullstack-developer/fala-neto/actions/workflows/ci.yml/badge.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 

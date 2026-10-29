@@ -30,7 +30,7 @@ O nome `stpadmin` vem da pasta `apps/admin`; o site é a app completa. **Ao muda
 
 ## 2. Passos na Railway (uma vez)
 
-1. **New Project → Deploy from GitHub repo** → `anderson-fullstack-developer/app_stp`.
+1. **New Project → Deploy from GitHub repo** → `anderson-fullstack-developer/fala-neto`.
 2. Em **Settings** do serviço:
    - Root directory: vazio (raiz do repositório — o Dockerfile precisa do monorepo).
    - Apagar o Build/Start Command que a Railway sugere (o Dockerfile já os define).
