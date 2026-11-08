@@ -402,6 +402,31 @@ Pronto sem contas: app Android (`com.falaneto.app`, 3 permissões, ícones, Aren
 
 Falta (precisa do dono do produto): D-05 idade mínima, email de suporte, contas Railway / Expo / Google Play, chaves de produção do Clerk e webhook, capturas de ecrã num telemóvel real, teste fechado de 14 dias.
 
+### Estado em 2026-11-08 (depois da preparação da publicação)
+
+**Em produção (Railway, desde 2026-10-14):** API `stpapi-production.up.railway.app` e web `stpadmin-production.up.railway.app` (um Dockerfile por serviço, `RAILWAY_DOCKERFILE_PATH`; ver `docs/DEPLOY.md`). Clerk ainda em instância de desenvolvimento; webhook ligado.
+
+**Feito desde então:**
+- **Arena:** "Procurar partida" com desconhecidos (duelo e Sobrevivência pública que começa sozinha) — só na web; pronúncia real na revelação de cada ronda (web e app).
+- **Som e voz:** som + aviso no topo do ecrã para notificações novas (web e app); "olá" do Neto nas boas-vindas; perguntas lidas em voz alta só na língua da interface (a palavra em Kriolu nunca é lida por voz automática).
+- **Gravações de pronúncia (trabalho pago):** papéis Falador/Ouvinte por língua, consentimento 18+, tarefas com quantidade, preço em € e prazo; 2 votos iguais decidem, perguntas de controlo, quem grava nunca avalia; ganhos, dados de pagamento (SEPA, MB WAY, Stripe) e pagamentos registados; painel `/admin/voice`; guia `/voice/guide`. Armazenamento só local por agora.
+- **Painel com dados reais em todas as páginas** (línguas, Arena, desafio do dia, rankings, conquistas, analytics de 30 dias, auditoria, regras, pesquisa); Premium, anúncios e denúncias dizem que ainda não há dados.
+- **Portfólio:** `apps/api/scripts/seed-portfolio.ts` cria atividade de demonstração numa base de dados à parte (recusa a produção).
+- **Commits:** sem coautoria (regra do dono, 2026-10-20); o histórico no GitHub foi reescrito para a retirar.
+
+**Próximos passos:**
+
+| # | Passo | Precisa do dono |
+|---|---|---|
+| 1 | APK de teste (EAS) apontado à API de produção | Conta Expo |
+| 2 | Capturas do painel com dados de demonstração | Branch `portfolio` no Neon |
+| 3 | Gravações online (Cloudflare R2, `PUBLIC_API_URL`) e contratar falantes em Portugal | Conta R2 |
+| 4 | "Procurar partida" na app Android | — |
+| 5 | Teste de microfone e avisos de tarefa nova / pagamento | — |
+| 6 | Retirar a demonstração antiga da Arena (perguntas de exemplo sem sessão) | Confirmar |
+| 7 | Domínio, Clerk em produção, D-05, email de suporte, Google Play (teste fechado de 14 dias) | Decisões e contas |
+| 8 | Stripe Connect para pagar falantes (no fim) | Conta Stripe |
+
 **Passo 4.5 — Notificações push** · M
 - Expo Notifications / FCM; preferências por categoria.
 
